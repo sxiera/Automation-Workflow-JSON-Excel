@@ -8,19 +8,18 @@ The pipeline takes a raw Excel input (`add-on.xlsx`), converts it to a workable 
 
 ## Prerequisites
 
-You need a Python environment with the following libraries:
-*   `pandas`
-*   `openpyxl` (for reading Excel)
-*   `xlsxwriter` (for writing formatted Excel)
+Ensure you have Python installed. You can install the required dependencies using pip:
 
-Recommended environment: `datascience` (or ensure `xlsxwriter` is installed in your active env).
+```bash
+pip install -r requirements.txt
+```
 
 ## Quick Start (Run All)
 
 To run the entire workflow in one go:
 
 ```bash
-conda run -n datascience python main.py
+python main.py
 ```
 
 ## Manual Usage Steps
@@ -68,7 +67,7 @@ python src/3_audit_results.py
 
 ```bash
 # Ensure you use an env with xlsxwriter
-conda run -n datascience python src/4_generate_report.py
+python src/4_generate_report.py
 ```
 
 ## Attribute Definitions
